@@ -1,0 +1,11 @@
+language: java
+jdk:
+  -openjdk13
+  
+addons: 
+  sonarcloud:
+    organization: reillynski
+    token: b02c8211299da24114c665499794b039b408ec5a
+script: 
+  - ant build
+  - sonar-scanner
